@@ -1,4 +1,3 @@
-// ilasm hello.il /exe /optimize /output:out/hello.exe
 
 .assembly extern System.Private.CoreLib
 {
@@ -22,7 +21,7 @@
 
 .class public auto ansi beforefieldinit Program extends [System.Private.CoreLib]System.Object
 {
-    .method public .method public hidebysig static void Main(string[] args) cil managed
+    .method public hidebysig static void Main(string[] args) cil managed
     {
         .entrypoint
         .maxstack  8
