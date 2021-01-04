@@ -1,5 +1,5 @@
 
-.assembly extern System.Private.CoreLib
+.assembly extern System.Private.CoreLib as mscorlib
 {
     .publickeytoken = (7C EC 85 D7 BE A7 79 8E)
     .ver 5:0:0:0
