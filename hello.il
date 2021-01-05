@@ -5,11 +5,17 @@
     .ver 5:0:0:0
 }
 
+.assembly extern System.Console
+{
+    .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A)
+    .ver 5:0:0:0
+}
+
 .assembly hello
 {
     .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = (01 00 08 00 00 00 00 00)
     .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = (
-        // ".NETCoreApp,Version=v5.0"
+        // ".NETCoreApp,Version=v5.0", FrameworkDisplayName = ""
         01 00 18 2e 4e 45 54 43 6f 72 65 41 70 70 2c 56
         65 72 73 69 6f 6e 3d 76 35 2e 30 01 00 54 0e 14
         46 72 61 6d 65 77 6f 72 6b 44 69 73 70 6c 61 79
@@ -35,7 +41,7 @@
         .maxstack  8
         IL_0000: nop
         IL_0001: ldstr "Hello World!"
-        IL_0006: call void [mscorlib]System.Console::WriteLine(string)
+        IL_0006: call void [System.Console]System.Console::WriteLine(string)
         IL_000b: nop
         IL_000c: ret
     }
