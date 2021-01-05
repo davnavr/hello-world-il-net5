@@ -7,7 +7,7 @@
 
 .assembly hello
 {
-    .custom instance void [System.Private.CoreLib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 )
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 )
     .hash algorithm 0x00008004
     .ver 0:0:0:0
 }
@@ -19,7 +19,7 @@
 .subsystem 0x0003 // WINDOWS_CUI
 .corflags 0x00000001 //  ILONLY
 
-.class public auto ansi beforefieldinit Program extends [System.Private.CoreLib]System.Object
+.class public auto ansi beforefieldinit Program extends [mscorlib]System.Object
 {
     .method public hidebysig static void Main(string[] args) cil managed
     {
@@ -27,7 +27,7 @@
         .maxstack  8
         IL_0000: nop
         IL_0001: ldstr "Hello World!"
-        IL_0006: call void [System.Private.CoreLib]System.Console::WriteLine(string)
+        IL_0006: call void [mscorlib]System.Console::WriteLine(string)
         IL_000b: nop
         IL_000c: ret
     }
@@ -36,7 +36,7 @@
     {
         .maxstack 8
         IL_0000: ldarg.0
-        IL_0001: call instance void [System.Private.CoreLib]System.Object::.ctor()
+        IL_0001: call instance void [mscorlib]System.Object::.ctor()
         IL_0006: ret
     }
 }
