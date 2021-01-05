@@ -4,11 +4,10 @@ Hello world program written in ILASM.
 
 # Building
 
-Using PowerShell, run `build.ps1`, which just calls `ilasm.exe`.
+Using PowerShell, run the `build.ps1`, which just starts `ilasm.exe`.
+Alternatively, you could just use `ilasm.exe` to build it with whatever options you want.
 
 # Running
-
-To run, you need to have .NET 5 installed and run the following command:
 
 ```text
 dotnet ./out/hello.dll
