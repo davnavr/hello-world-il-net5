@@ -1,1 +1,1 @@
-ilasm hello.il /dll /optimize /output:out/hello.dll
+ilasm hello.il /optimize /output:out/hello.dll
